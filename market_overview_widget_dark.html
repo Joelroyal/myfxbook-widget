@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView Market Overview Widget - Dark Theme</title>
+</head>
+<body>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright">
+            <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
+                <span class="blue-text">Track all markets on TradingView</span>
+            </a>
+        </div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+        {
+            "colorTheme": "dark",
+            "dateRange": "1D",
+            "showChart": true,
+            "locale": "en",
+            "largeChartUrl": "",
+            "isTransparent": false,
+            "showSymbolLogo": true,
+            "showFloatingTooltip": false,
+            "width": "280",
+            "height": "550",
+            "plotLineColorGrowing": "rgba(101, 101, 101, 1)",
+            "plotLineColorFalling": "rgba(0, 0, 0, 1)",
+            "gridLineColor": "rgba(240, 243, 250, 0)",
+            "scaleFontColor": "rgba(209, 212, 220, 1)",
+            "belowLineFillColorGrowing": "rgba(203, 203, 203, 0.12)",
+            "belowLineFillColorFalling": "rgba(182, 182, 182, 0.12)",
+            "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+            "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+            "symbolActiveColor": "rgba(152, 152, 152, 0.12)",
+            "tabs": [
+                {
+                    "title": "Favourite",
+                    "symbols": [
+                        {"s": "FX:EURUSD"},
+                        {"s": "CAPITALCOM:GBPUSD"},
+                        {"s": "CME_MINI:NQ1!"},
+                        {"s": "CME_MINI:ES1!"},
+                        {"s": "COMEX:GC1!"},
+                        {"s": "COMEX:SI1!"}
+                    ],
+                    "originalTitle": "Indices"
+                },
+                {
+                    "title": "Futures",
+                    "symbols": [
+                        {"s": "CME_MINI:ES1!", "d": "S&P 500"},
+                        {"s": "CME:6E1!", "d": "Euro"},
+                        {"s": "COMEX:GC1!", "d": "Gold"},
+                        {"s": "NYMEX:CL1!", "d": "WTI Crude Oil"},
+                        {"s": "NYMEX:NG1!", "d": "Gas"}
+                    ],
+                    "originalTitle": "Futures"
+                },
+                {
+                    "title": "Forex",
+                    "symbols": [
+                        {"s": "FX:EURUSD", "d": "EUR to USD"},
+                        {"s": "FX:GBPUSD", "d": "GBP to USD"},
+                        {"s": "FX:USDJPY", "d": "USD to JPY"},
+                        {"s": "FX:USDCHF", "d": "USD to CHF"},
+                        {"s": "FX:AUDUSD", "d": "AUD to USD"},
+                        {"s": "FX:USDCAD", "d": "USD to CAD"}
+                    ],
+                    "originalTitle": "Forex"
+                }
+            ]
+        }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+</body>
+</html>
